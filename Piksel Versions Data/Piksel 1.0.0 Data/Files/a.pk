@@ -1,0 +1,15 @@
+def clamp(min, max, x)
+    if x >= max then let result = max
+    if x <= min then let result = min
+    print(result)
+end
+def clink(a, b, val)
+    if val >= a or val == a and val <= b then let result = a elif val >= b or val == b then let result = b
+    print(result)
+end
+let mi = input_int()
+let ma = input_int()
+let val = input_int()
+let func = input_int()
+if func == 0 then clamp(mi, ma, val)
+if func == 1 then clink(mi, ma, val)
